@@ -10,4 +10,4 @@ push:
 	docker push $(IMAGE_NAME)
 
 testrun:
-	docker run --rm -it --name winbox --volume /tmp/.X11-unix:/tmp/.X11-unix --env DISPLAY=:0 $(IMAGE_NAME)
+	docker run --rm -it --name winbox --ipc host --volume /tmp/.X11-unix:/tmp/.X11-unix --env DISPLAY=:0 $(IMAGE_NAME)
