@@ -10,6 +10,7 @@ https://wiki.mikrotik.com/wiki/Manual:Winbox
 
     docker run \
         --detach \
+        --ipc host \
         --name winbox \
         --volume /tmp/.X11-unix:/tmp/.X11-unix \
         --env DISPLAY=$DISPLAY \
