@@ -18,5 +18,6 @@ https://wiki.mikrotik.com/wiki/Manual:Winbox
         --volume /etc/localtime:/etc/localtime:ro \
         --volume /usr/share/X11/xkb:/usr/share/X11/xkb:ro \
         --volume /etc/machine-id:/etc/machine-id:ro \
+        --volume "$HOME/.local/share/winbox:/root/.wine/drive_c/users/root/Application Data/Mikrotik/Winbox" \
         --env DISPLAY=$DISPLAY \
         fialakarel/winbox
